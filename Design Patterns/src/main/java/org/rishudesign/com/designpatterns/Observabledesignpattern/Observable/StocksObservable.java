@@ -20,4 +20,6 @@ public interface StocksObservable {
 
     public int getStockCount();
 
+    public String getObservalableName();
+
 }

@@ -14,6 +14,7 @@ public class MobileAlertObserverImpln implements NotificationAlertObserver{
 
     @Override
     public void update(){
+
         sendMessage(mobileNo,"hurry up!");
     }
 

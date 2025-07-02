@@ -35,4 +35,9 @@ public class IphoneObservable implements  StocksObservable{
     public int getStockCount() {
         return stockCount;
     }
+
+    @Override
+    public String getObservalableName(){
+        return "iphone";
+    }
 }

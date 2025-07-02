@@ -14,11 +14,11 @@ public class EmailAlertObserverImpl implements NotificationAlertObserver{
 
     @Override
     public void update(){
-        sendEmail(emailId,"Product in stock");
+        sendEmail(emailId,stocksObservable.getObservalableName() + " is in stock");
     }
 
 
     private void sendEmail(String emailId,String msg){
-        System.out.println("mail sent to :" + emailId);
+        System.out.println("mail sent to :" + emailId + " " + msg);
     }
 }
