@@ -13,7 +13,6 @@ public class ElevatorController {
         this.car = car;
         upMinPQ = new PriorityQueue<>();
         downMaxPQ = new PriorityQueue<>((a,b) -> b-a); // down k time min heap
-
     }
 
     public void submitExternalRequest(int floor , Direction direction){
@@ -22,15 +21,10 @@ public class ElevatorController {
         } else {
             upMinPQ.offer(floor);
         }
-
     }
 
     public void submitInternalRequest(int floor){
 
     }
-
-
-
-
 
 }

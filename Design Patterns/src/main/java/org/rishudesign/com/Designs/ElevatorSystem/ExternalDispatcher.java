@@ -18,7 +18,6 @@ public class ExternalDispatcher {
                 elevatorController.submitExternalRequest(floor,direction);
             } else if(elevatorID%2==0 && floor%2==0){
                 elevatorController.submitExternalRequest(floor,direction);
-
             }
         }
     }
